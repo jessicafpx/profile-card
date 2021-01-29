@@ -1,0 +1,134 @@
+@import "./base";
+@import "./background";
+@import "./variables";
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+.content {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #5b4463, #28223f);
+
+  @include flexCenter(row);
+
+  .glass {
+    min-height: 55rem;
+    width: 37rem;
+
+    background: linear-gradient(to right bottom, rgba(30, 30, 57, 0.5), rgba(30, 30, 57, 0.3));
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(1.2rem);
+
+    header {
+      @include flexCenter(column);
+
+      .avatar {
+        @include flexCenter(column);
+
+        width: 17rem;
+        height: 17rem;
+        border-radius: 50%;
+        border: 2px $primary-color solid;
+
+        margin: 1.5rem 0 1rem 0;
+        padding: 0.8rem;
+        object-fit: cover;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+        font-weight: map-get($font-weight, regular);
+        color: $text-color;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: map-get($font-weight, thin);
+        color: $text-color;
+      }
+    }
+
+    main {
+      p {
+        font-size: 1.6rem;
+        font-weight: map-get($font-weight, thin);
+        text-align: center;
+        color: $text-color;
+
+        padding: 1.8rem 5rem 2rem 5rem;
+      }
+
+      .socialmedia {
+        @include flexCenter(row);
+
+        a {
+          @include flexCenter((row));
+          color: $text-color;
+          background-color: $primary-color;
+          text-decoration: none;
+
+          border-radius: 0.5rem;
+          padding: 1rem 1.4rem;
+          margin-bottom: 2rem;
+
+          font-size: 1.6rem;
+          font-weight: map-get($font-weight, thin);
+
+          transition: 0.2s;
+
+          img {
+            width: 2.8rem;
+            margin-right: 0.8rem;
+          }
+
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+        }
+
+        #linkedin {
+          margin-right: 2.2rem;
+        }
+      }
+    }
+
+    footer {
+      color: $text-color;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 0px 0px 20px 20px;
+
+      padding: 1rem 2.5rem;
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: map-get($font-weight, regular);
+
+        display: flex;
+        padding: 0 0.4rem 1rem 0;
+        border: rgba(255, 255, 255, 0.1);
+      }
+
+      h5 {
+        font-size: 1.2rem;
+        font-weight: map-get($font-weight, regular);
+
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0.4rem;
+        padding: 0.7rem;
+
+        margin-bottom: 1rem;
+      }
+
+      .line {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+.circle1,
+.circle2 {
+  background: linear-gradient(to right bottom, rgba(196, 196, 196, 0.5), rgba(196, 196, 196, 0.3));
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.circle1 {
+  bottom: 3%;
+  right: 22%;
+}
+
+.circle2 {
+  top: 3%;
+  left: 22%;
+}
+
+@media (max-width: 1024px) {
+  .circle1 {
+    bottom: 3%;
+    right: 15%;
+  }
+
+  .circle2 {
+    top: 3%;
+    left: 15%;
+  }
+}
+
+@media (max-width: 900px) {
+  .circle1 {
+    bottom: 3%;
+    right: 10%;
+  }
+
+  .circle2 {
+    top: 3%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 750px) {
+  .circle1 {
+    bottom: 3%;
+    right: 5%;
+  }
+
+  .circle2 {
+    top: 3%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .circle1 {
+    bottom: 3%;
+    right: -5%;
+  }
+
+  .circle2 {
+    top: 3%;
+    left: -5%;
+  }
+}
