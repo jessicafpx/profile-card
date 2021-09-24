@@ -37,6 +37,6 @@ This is a profile card project developed to reinforce the concepts studied about
 
 > This project is under the MIT license. See the archive [LICENSE](https://github.com/jessicafpx/profile-card/blob/main/LICENSE.md) for more details.
 
----
+--- 
 
 ##### <p align="center"> <strong> < developed by <a href="https://github.com/jessicafpx"> @jessicafpx</a> /> </strong> 👋
