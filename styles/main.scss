@@ -125,9 +125,14 @@
       }
 
       .line {
+        font-size: 2rem;
         display: flex;
         justify-content: space-between;
         flex-flow: row wrap;
+      }
+      .line p {
+        font-size: 2rem;
+        
       }
     }
   }
