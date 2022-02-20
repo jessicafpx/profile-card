@@ -39,4 +39,4 @@ This is a profile card project developed to reinforce the concepts studied about
 
 --- 
 
-##### <p align="center"> <strong> < developed by <a href="https://github.com/jessicafpx"> @jessicafpx</a> /> </strong> 👋
+##### <p align="center"> <strong> <developed by <a href="https://github.com/jessicafpx"> @jessicafpx</a> /> </strong> 👋
